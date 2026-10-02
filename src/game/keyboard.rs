@@ -18,7 +18,6 @@ pub fn keyboard() {
     let mut direction: Key = Key::CtrlC;
 
     loop {
-        game::run();
         let mut last_received_key = None;
         while let Ok(key) = rx.try_recv() {
             last_received_key = Some(key);

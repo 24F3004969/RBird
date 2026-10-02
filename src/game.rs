@@ -7,6 +7,7 @@ mod bird_part;
 mod obstacles;
 mod animate_ascii_image;
 mod tuple;
+mod is_part;
 
 trait GameAssert {}
 const SPLASH_SCREEN: &str = r#"
