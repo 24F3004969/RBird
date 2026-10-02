@@ -1,5 +1,11 @@
-mod position;
+mod keyboard;
 mod point;
+mod position;
+mod display;
+mod block;
+mod bird_part;
+mod obstacles;
+mod animate_ascii_image;
 mod tuple;
 
 trait GameAssert {}
@@ -31,5 +37,5 @@ pub fn run() {
     println!("{}", SPLASH_SCREEN);
     println!("{}", B1);
     println!("{}", B2);
+    keyboard::keyboard();
 }
-
